@@ -48,11 +48,11 @@
 // 	+jpg(bla)
 
 =folded-corner
-	$page-padding: 15px
-	$page-radius: 10px
+	$page-padding: 15px 15px 50px
+	$page-radius: 0
 	$page-background: white
 	$fold-size: 50px
-	$fold-color: rgba(10, 10, 10, 0.2)
+	$fold-color: green
 	&
 		position: relative
 		min-width: 2 * $fold-size
@@ -60,7 +60,7 @@
 		padding: $page-padding
 		border-radius: $page-radius
 		border-bottom-right-radius: 1.05 * $fold-size    
-		+transparent-corner($page-background, $fold-size)
+		+transparent-corner($page-background, $fold-size + 1)
 	&:before
 		position: absolute
 		content: ""
@@ -68,12 +68,12 @@
 		height: $fold-size
 		border-top-left-radius: $page-radius
 		// position
-		bottom: -1px
-		right: -1px
+		bottom: 0
+		right: 0
 		// shadow
-		box-shadow: -1px -1px 1px rgba(40, 40, 56, 0.7)
+		// box-shadow: -1px -1px 1px rgba(40, 40, 56, 0.7)
 		z-index: 2
-		+transparent-corner($fold-color, $fold-size)
+		+transparent-corner($fold-color, $fold-size - 1)
 
 //Apply a background with a transparent corner (position)
 =transparent-corner($background, $size)
@@ -81,7 +81,7 @@
 	$tr: -135deg
 	$br: -45deg
 	$bl: 45deg
-	$diagonal: $size / 1.44
+	$diagonal: $size / 1.41421356237
 	background: $background
 	background: -webkit-linear-gradient($br, transparent $diagonal, $background $diagonal)
 	background: linear-gradient($br, transparent $diagonal, $background $diagonal)
@@ -90,15 +90,15 @@ body
 	font-family: Arial, sans-serif 
 	font-size: 12px 
 	line-height: 1.4
-	background: #000
+	background: red
 
 
 // common blocks      
 
 .out
 	margin: 20px auto
-	width: 600px
-	height: 300px
+	width: 40%
+	height: auto
 	color: #000
 	background: #fff
 	+folded-corner

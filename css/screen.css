@@ -20,11 +20,11 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; background: black; }
+body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; background: red; }
 
-.out { margin: 20px auto; width: 600px; height: 300px; color: black; background: white; }
-.out { position: relative; min-width: 100px; min-height: 100px; padding: 15px; border-radius: 10px; border-bottom-right-radius: 52.5px; background: white; background: -webkit-linear-gradient(-45deg, transparent 34.72222px, white 34.72222px); background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 34.72222px, #ffffff 34.72222px); }
-.out:before { position: absolute; content: ""; width: 50px; height: 50px; border-top-left-radius: 10px; bottom: -1px; right: -1px; box-shadow: -1px -1px 1px rgba(40, 40, 56, 0.7); z-index: 2; background: rgba(10, 10, 10, 0.2); background: -webkit-linear-gradient(-45deg, transparent 34.72222px, rgba(10, 10, 10, 0.2) 34.72222px); background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 34.72222px, rgba(10, 10, 10, 0.2) 34.72222px); }
+.out { margin: 20px auto; width: 40%; height: auto; color: black; background: white; }
+.out { position: relative; min-width: 100px; min-height: 100px; padding: 15px 15px 50px; border-radius: 0; border-bottom-right-radius: 52.5px; background: white; background: -webkit-linear-gradient(-45deg, transparent 36.06245px, white 36.06245px); background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 36.06245px, #ffffff 36.06245px); }
+.out:before { position: absolute; content: ""; width: 50px; height: 50px; border-top-left-radius: 0; bottom: 0; right: 0; z-index: 2; background: green; background: -webkit-linear-gradient(-45deg, transparent 34.64823px, green 34.64823px); background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 34.64823px, #008000 34.64823px); }
 .out p { margin-top: 15px; }
 .out p:first-child { margin-top: 0; }
 
