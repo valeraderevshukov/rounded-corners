@@ -51,7 +51,7 @@
 	$page-padding: 15px 15px 50px
 	$page-radius: 0
 	$page-background: white
-	$fold-size: 80px
+	$fold-size: 50px
 	$fold-color: green
 	&
 		position: relative
@@ -84,8 +84,8 @@
 	$bl: 45deg
 	$diagonal: $size / 1.41421356237
 	background: $background
-	background: -webkit-linear-gradient($br, transparent $diagonal, $background $diagonal)
-	background: linear-gradient($br, transparent $diagonal, $background $diagonal)
+	background: -webkit-linear-gradient($br, transparent ceil($diagonal), $background ceil($diagonal))
+	background: linear-gradient($br, transparent ceil($diagonal), $background ceil($diagonal))
 
 body
 	font-family: Arial, sans-serif 
@@ -98,11 +98,12 @@ body
 
 .out
 	margin: 20px auto
-	width: 40%
+	width: 30%
 	height: auto
 	color: #000
 	background: #fff
 	+folded-corner
+	+box
 	p
 		margin-top: 15px
 		&:first-child
