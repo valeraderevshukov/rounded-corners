@@ -23,8 +23,8 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; background: black; }
 
 .out { margin: 20px auto; width: 600px; height: 300px; color: black; background: white; }
-.out { position: relative; min-width: 100px; min-height: 100px; padding: 15px; border-radius: 10px; border-bottom-right-radius: 52.5px; background: white; background: -webkit-linear-gradient(-45deg, transparent 34.72222px, white 34.72222px); background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 34.72222px, #ffffff 34.72222px); }
-.out:before { position: absolute; content: ""; width: 50px; height: 50px; border-top-left-radius: 10px; bottom: 0; right: 0; box-shadow: -1px -1px 1px rgba(40, 40, 56, 0.7); background: rgba(10, 10, 10, 0.2); background: -webkit-linear-gradient(-45deg, transparent 34.72222px, rgba(10, 10, 10, 0.2) 34.72222px); background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 34.72222px, rgba(10, 10, 10, 0.2) 34.72222px); }
+.out { position: relative; min-width: 100px; min-height: 100px; padding: 15px; border-radius: 10px; border-bottom-right-radius: 52.5px; background: white; background: -webkit-linear-gradient(-45deg, transparent 35.35534px, white 35.35534px); background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 35.35534px, #ffffff 35.35534px); }
+.out:before { position: absolute; content: ""; width: 50px; height: 50px; border-top-left-radius: 10px; bottom: 0; right: 0; box-shadow: -1px -1px 1px rgba(40, 40, 56, 0.7); background: rgba(10, 10, 10, 0.2); background: -webkit-linear-gradient(-45deg, transparent 35.35534px, rgba(10, 10, 10, 0.2) 35.35534px); background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 35.35534px, rgba(10, 10, 10, 0.2) 35.35534px); }
 .out p { margin-top: 15px; }
 .out p:first-child { margin-top: 0; }
 
