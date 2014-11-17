@@ -68,10 +68,11 @@
 		height: $fold-size
 		border-top-left-radius: $page-radius
 		// position
-		bottom: 0
-		right: 0 
+		bottom: -1px
+		right: -1px
 		// shadow
 		box-shadow: -1px -1px 1px rgba(40, 40, 56, 0.7)
+		z-index: 2
 		+transparent-corner($fold-color, $fold-size)
 
 //Apply a background with a transparent corner (position)
@@ -80,7 +81,7 @@
 	$tr: -135deg
 	$br: -45deg
 	$bl: 45deg
-	$diagonal: $size / 1.41421356237
+	$diagonal: $size / 1.44
 	background: $background
 	background: -webkit-linear-gradient($br, transparent $diagonal, $background $diagonal)
 	background: linear-gradient($br, transparent $diagonal, $background $diagonal)
