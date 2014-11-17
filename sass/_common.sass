@@ -51,15 +51,15 @@
 	$page-padding: 15px 15px 50px
 	$page-radius: 0
 	$page-background: white
-	$fold-size: 50px
+	$fold-size: 80px
 	$fold-color: green
 	&
 		position: relative
-		min-width: 2 * $fold-size
-		min-height: 2 * $fold-size
+		// min-width: 2 * $fold-size
+		// min-height: 2 * $fold-size
 		padding: $page-padding
 		border-radius: $page-radius
-		border-bottom-right-radius: 1.05 * $fold-size    
+		border-bottom-right-radius: 1.1 * $fold-size    
 		+transparent-corner($page-background, $fold-size + 1)
 	&:before
 		position: absolute
@@ -71,9 +71,10 @@
 		bottom: 0
 		right: 0
 		// shadow
-		// box-shadow: -1px -1px 1px rgba(40, 40, 56, 0.7)
-		z-index: 2
+		box-shadow: -2px -2px 1px rgba(40, 40, 56, 0.7)
+		// z-index: -2
 		+transparent-corner($fold-color, $fold-size - 1)
+		// +rotate(135)
 
 //Apply a background with a transparent corner (position)
 =transparent-corner($background, $size)
@@ -81,7 +82,7 @@
 	$tr: -135deg
 	$br: -45deg
 	$bl: 45deg
-	$diagonal: $size / 1.443
+	$diagonal: $size / 1.41421356237
 	background: $background
 	background: -webkit-linear-gradient($br, transparent $diagonal, $background $diagonal)
 	background: linear-gradient($br, transparent $diagonal, $background $diagonal)
